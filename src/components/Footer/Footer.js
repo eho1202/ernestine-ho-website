@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { animateScroll as scroll } from "react-scroll";
-import logo from "../../assets/images/ehoorangelogo.png";
+import logo from "../../assets/images/logo.png";
 import {
   FooterContainer,
   FooterWrap,
