@@ -98,4 +98,5 @@ export const Img = styled.img`
   margin: 0 0 10px 50px;
   padding-right: 0;
   object-fit: cover;
+  border-radius: 10%;
 `;

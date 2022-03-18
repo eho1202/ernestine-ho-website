@@ -2,6 +2,7 @@ import React from "react";
 import { ButtonA } from "../Resuable/ButtonElements";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import Pdf from "../../assets/Ernestine_Ho_Resume.pdf";
 import {
   ContactContainer,
   ContactWrapper,
@@ -69,9 +70,10 @@ const Contact = ({
                   </ContactLinkC>
                 </ContactIcons>
                 <BtnWrap>
-                  <ButtonA /* TODO: Change Button to a href instead of link */
-                    href="/Ernestine_Ho_Resume.pdf"
+                  <ButtonA
+                    href={Pdf}
                     target="_blank"
+                    rel="noopener noreferrer"
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
