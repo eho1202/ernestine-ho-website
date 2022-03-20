@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonA } from "./Resuable/ButtonElements";
 import { EmailIcon, GitHubIcon, LinkedInIcon } from '@mui/icons-material/Email';
-import Pdf from "../assets/Ernestine_Ho_Resume.pdf";
+import { Pdf } from "../assets/Ernestine_Ho_Resume.pdf";
 import {
   ContactContainer,
   ContactWrapper,
