@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../Resuable/ButtonElements";
+import { Button } from "./Resuable/ButtonElements";
 import {
   AboutContainer,
   AboutWrapper,

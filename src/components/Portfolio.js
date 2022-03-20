@@ -1,7 +1,7 @@
 import React from "react";
-import Icon1 from "../../assets/images/Portfolio_website.svg";
-import Icon2 from "../../assets/images/Covify.svg";
-import Icon3 from "../../assets/images/SACHS_App.svg";
+import Icon1 from "../assets/images/Portfolio_website.svg";
+import Icon2 from "../assets/images/Covify.svg";
+import Icon3 from "../assets/images/SACHS_App.svg";
 import {
   PortfolioContainer,
   PortfolioH1,

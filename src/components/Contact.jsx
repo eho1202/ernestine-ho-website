@@ -1,8 +1,7 @@
 import React from "react";
-import { ButtonA } from "../Resuable/ButtonElements";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import Pdf from "../../assets/Ernestine_Ho_Resume.pdf";
+import { ButtonA } from "./Resuable/ButtonElements";
+import { EmailIcon, GitHubIcon, LinkedInIcon } from '@mui/icons-material/Email';
+import Pdf from "../assets/Ernestine_Ho_Resume.pdf";
 import {
   ContactContainer,
   ContactWrapper,
@@ -52,21 +51,21 @@ const Contact = ({
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <FaGithub />
+                    <GitHubIcon />
                   </ContactLinkA>
                   <ContactLinkB
                     href="https://www.linkedin.com/in/ernestineho/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <FaLinkedin />
+                    <LinkedInIcon />
                   </ContactLinkB>
                   <ContactLinkC
                     href="mailto:ernestineho1202@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <HiOutlineMail />
+                    <EmailIcon />
                   </ContactLinkC>
                 </ContactIcons>
                 <BtnWrap>

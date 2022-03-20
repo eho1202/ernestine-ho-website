@@ -1,8 +1,7 @@
 import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { EmailIcon, GitHubIcon, LinkedInIcon } from '@mui/icons-material/Email';
 import { animateScroll as scroll } from "react-scroll";
-import logo from "../../assets/images/logo.png";
+import logo from "../assets/images/logo.png";
 import {
   FooterContainer,
   FooterWrap,
@@ -69,21 +68,21 @@ const Footer = () => {
                 target="_blank"
                 aria-label="LinkedIn"
               >
-                <FaLinkedin />
+                <LinkedInIcon />
               </SocialIconLink>
               <SocialIconLink
                 href="https://github.com/eho1202"
                 target="_blank"
                 aria-label="GitHub"
               >
-                <FaGithub />
+                <GitHubIcon />
               </SocialIconLink>
               <SocialIconLink
                 href="mailto:ernestineho1202@gmail.com"
                 target="_blank"
                 aria-label="Email"
               >
-                <HiOutlineMail />
+                <EmailIcon />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
