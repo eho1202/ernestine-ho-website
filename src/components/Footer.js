@@ -1,5 +1,7 @@
 import React from "react";
-import { EmailIcon, GitHubIcon, LinkedInIcon } from '@mui/icons-material/Email';
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { animateScroll as scroll } from "react-scroll";
 import logo from "../assets/images/logo.png";
 import {
@@ -64,18 +66,18 @@ const Footer = () => {
 
             <SocialIcons>
               <SocialIconLink
-                href="https://www.linkedin.com/in/ernestineho/"
-                target="_blank"
-                aria-label="LinkedIn"
-              >
-                <LinkedInIcon />
-              </SocialIconLink>
-              <SocialIconLink
                 href="https://github.com/eho1202"
                 target="_blank"
                 aria-label="GitHub"
               >
                 <GitHubIcon />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://www.linkedin.com/in/ernestineho/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <LinkedInIcon />
               </SocialIconLink>
               <SocialIconLink
                 href="mailto:ernestineho1202@gmail.com"
