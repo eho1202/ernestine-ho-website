@@ -64,7 +64,7 @@ export const TopLine = styled.p`
 `;
 
 export const Heading = styled.h1`
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
@@ -108,7 +108,6 @@ export const ContactIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
-  font-size: 42px;
   margin-bottom: 12px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;

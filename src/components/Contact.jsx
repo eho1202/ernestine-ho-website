@@ -53,21 +53,21 @@ const Contact = ({
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <GitHubIcon />
+                    <GitHubIcon style={{ "fontSize": "40px" }} />
                   </ContactLinkA>
                   <ContactLinkB
                     href="https://www.linkedin.com/in/ernestineho/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <LinkedInIcon />
+                    <LinkedInIcon style={{ "fontSize": "40px" }} />
                   </ContactLinkB>
                   <ContactLinkC
                     href="mailto:ernestineho1202@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <EmailIcon />
+                    <EmailIcon style={{ "fontSize": "40px" }} />
                   </ContactLinkC>
                 </ContactIcons>
                 <BtnWrap>
