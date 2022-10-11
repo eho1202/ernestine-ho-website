@@ -15,8 +15,9 @@ const HeroSection = (primary, dark, dark2) => {
       <HeroContent>
         <HeroH1>Welcome! I'm Ernestine Ho</HeroH1>
         <HeroP>
-          I am a Computer Engineering student at Ryerson University in Toronto,
-          Canada.
+          I am a Software Engineering student at Toronto Metropolitan University in Toronto,
+          Canada.<br/>
+          (Formally Ryerson University)
         </HeroP>
         <Button
           to="about"

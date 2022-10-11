@@ -8,7 +8,7 @@ export const homeObjOne = {
   description:
     "Hi! I'm Ernestine. I am a second year Computer Engineering student based in Toronto, Canada." +
     " I enjoy working on projects, watching Youtube, and play video games in my free time." +
-    " My go-to languages are Python and Java. I am currently learning JavaScript and SolidWorks.",
+    " My go-to languages are Python and Java. I am currently learning SQL in Oracle and JavaScript Frameworks.",
   buttonLabel: "Continue",
   imgStart: false,
   img: require("../../assets/images/Me.png"),
@@ -28,7 +28,7 @@ export const homeObjTwo = {
   description:
     "Hi! I'm Ernestine. I am a second year Computer Engineering student based in Toronto, Canada." +
     "I enjoy working on projects, watching Youtube, and play video games in my free time." +
-    "My go-to languages are Python and Java. I am currently learning JavaScript and SolidWorks.",
+    "My go-to languages are Python and Java. I am currently learning SQL in Oracle and JavaScript Frameworks.",
   buttonLabel: "Resume",
   imgStart: true,
   img: require("../../assets/images/Hangout.png"),

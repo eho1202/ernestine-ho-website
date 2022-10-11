@@ -93,8 +93,8 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%;
-  height: 500px;
+  width: 95%;
+  height: 480px;
   margin: 0 0 10px 50px;
   padding-right: 0;
   object-fit: cover;
