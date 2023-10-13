@@ -7,7 +7,7 @@ export const homeObjOne = {
   headLine: "Who am I?",
   description:
     "Hi! I'm Ernestine. I am a third year Software Engineering student based in Toronto, Canada." +
-    " I enjoy working on projects, watching Youtube, and playing video games in my free time." +
+    " I enjoy working on projects, indoor bouldering, and playing video games in my free time." +
     " My go-to languages are Python and Java. I am currently learning different JavaScript Frameworks.",
   buttonLabel: "Continue",
   imgStart: false,
@@ -27,7 +27,7 @@ export const homeObjTwo = {
   headLine: "Contact Me",
   description:
     "Hi! I'm Ernestine. I am a third year Software Engineering student based in Toronto, Canada." +
-    "I enjoy working on projects, watching Youtube, and playing video games in my free time." +
+    "I enjoy working on projects, indoor bouldering, and playing video games in my free time." +
     "My go-to languages are Python and Java. I am currently learning different JavaScript Frameworks.",
   buttonLabel: "Resume",
   imgStart: true,
