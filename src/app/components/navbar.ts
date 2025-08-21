@@ -14,13 +14,6 @@ import { CommonModule } from '@angular/common';
             <a href="#" class="btn btn-ghost text-xl flex items-center gap-2" (click)="scrollToSection('home', $event)">
                 <lucide-icon name="house" class="w-6 h-6"/>
             </a>
-            <!-- <input
-                type="checkbox"
-                checked="checked"
-                class="toggle toggle-neutral dark:bg-white dark:checked:bg-white"
-                [checked]="isDarkMode"
-                (change)="toggleTheme($event)"
-            /> -->
         </div>
         <div role="tablist" class="tabs tabs-border flex items-center">
             <ul class="menu menu-horizontal px-1">
