@@ -4,6 +4,7 @@
 @tailwind utilities;
 @source "./public/*.{html,js}";
 @plugin "daisyui" {
+  themes: fantasy --default
 };
 
 /* You can add global styles to this file, and also import other style files */

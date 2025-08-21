@@ -2,23 +2,25 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { fromEvent, Subscription } from 'rxjs';
 import { LucideAngularModule } from 'lucide-angular';
 import { AppModule } from '../app.module';
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-navbar',
-    imports: [AppModule, LucideAngularModule],
+    imports: [AppModule, LucideAngularModule, CommonModule],
     template: `
-    <nav class="navbar bg-base-100 shadow-sm px-6 justify-between fixed z-[999]">
+    <nav class="navbar bg-base-100 shadow-sm px-6 justify-between z-[999] fixed"
+        [class.hidden]="!isSticky">
         <div class="flex items-center gap-2">
             <a href="#" class="btn btn-ghost text-xl flex items-center gap-2" (click)="scrollToSection('home', $event)">
                 <lucide-icon name="house" class="w-6 h-6"/>
             </a>
-            <input
+            <!-- <input
                 type="checkbox"
                 checked="checked"
                 class="toggle toggle-neutral dark:bg-white dark:checked:bg-white"
                 [checked]="isDarkMode"
                 (change)="toggleTheme($event)"
-            />
+            /> -->
         </div>
         <div role="tablist" class="tabs tabs-border flex items-center">
             <ul class="menu menu-horizontal px-1">
@@ -33,35 +35,11 @@ import { AppModule } from '../app.module';
 })
 
 export default class NavbarComponent implements OnInit, OnDestroy {
-    isDarkMode = false;
     activeTab = 'home';
     isSticky = false;
     private scrollSubscription?: Subscription;
 
-    toggleTheme(event: Event): void {
-        this.isDarkMode = (event.target as HTMLInputElement).checked;
-        document.documentElement.setAttribute(
-            'data-theme',
-            this.isDarkMode ? 'dark' : 'light'
-        );
-    }
-
-    private applyTheme(dark: boolean): void {
-        if (dark) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        } else {
-            document.documentElement.setAttribute('data-theme', 'light');
-        }
-    }
-
     ngOnInit() {
-        this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        this.applyTheme(this.isDarkMode);
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-            this.isDarkMode = e.matches;
-            this.applyTheme(this.isDarkMode);
-        });
-
         this.scrollSubscription = fromEvent(window, 'scroll').subscribe(() => {
         const heroElement = document.querySelector('app-hero-section');
         if (heroElement) {
@@ -76,7 +54,6 @@ export default class NavbarComponent implements OnInit, OnDestroy {
     scrollToSection(sectionId: string, event: Event) {
         event.preventDefault();
         
-        // Update active tab
         this.activeTab = sectionId;
         
         const element = document.getElementById(sectionId);
