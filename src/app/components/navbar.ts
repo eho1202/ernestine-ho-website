@@ -12,6 +12,13 @@ import { AppModule } from '../app.module';
             <a href="#" class="btn btn-ghost text-xl flex items-center gap-2" (click)="scrollToSection('home', $event)">
                 <lucide-icon name="house" class="w-6 h-6"/>
             </a>
+            <input
+                type="checkbox"
+                checked="checked"
+                class="toggle toggle-neutral dark:bg-white dark:checked:bg-white"
+                [checked]="isDarkMode"
+                (change)="toggleTheme($event)"
+            />
         </div>
         <div role="tablist" class="tabs tabs-border flex items-center">
             <ul class="menu menu-horizontal px-1">
@@ -26,11 +33,35 @@ import { AppModule } from '../app.module';
 })
 
 export default class NavbarComponent implements OnInit, OnDestroy {
+    isDarkMode = false;
     activeTab = 'home';
     isSticky = false;
     private scrollSubscription?: Subscription;
 
+    toggleTheme(event: Event): void {
+        this.isDarkMode = (event.target as HTMLInputElement).checked;
+        document.documentElement.setAttribute(
+            'data-theme',
+            this.isDarkMode ? 'dark' : 'light'
+        );
+    }
+
+    private applyTheme(dark: boolean): void {
+        if (dark) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    }
+
     ngOnInit() {
+        this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        this.applyTheme(this.isDarkMode);
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            this.isDarkMode = e.matches;
+            this.applyTheme(this.isDarkMode);
+        });
+
         this.scrollSubscription = fromEvent(window, 'scroll').subscribe(() => {
         const heroElement = document.querySelector('app-hero-section');
         if (heroElement) {

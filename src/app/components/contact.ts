@@ -10,7 +10,7 @@ import { AppModule } from '../app.module';
             <div class="container mx-auto flex flex-col lg:flex-row items-start justify-center">
                 <div class="space-y-2 text-center">
                     <h2 class="text-2xl">Let's Get in Touch!</h2>
-                    <h1 class="text-6xl mb-4">Contact Me</h1>
+                    <h1 class="text-6xl mb-6">Contact Me</h1>
                     <div class="w-full h-24 bg-base-100 border border-neutral-content rounded-4xl px-6 py-4 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 max-w-2xl shadow-sm">
                         <div class="flex items-center gap-1">
                             <lucide-icon name="mail" class="translate-y-0.5"></lucide-icon>
