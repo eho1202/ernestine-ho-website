@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { LucideAngularModule, House, Award, GraduationCap, Mail } from 'lucide-angular';
+import { LucideAngularModule, Award, GraduationCap, Mail } from 'lucide-angular';
 
 @NgModule({
   imports: [
-    LucideAngularModule.pick({ House, Award, GraduationCap, Mail })
+    LucideAngularModule.pick({ Award, GraduationCap, Mail })
   ],
 })
 
