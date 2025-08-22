@@ -27,7 +27,7 @@ import TickIconComponent from './reusable/tick-icon';
                 <div class="timeline-end md:mb-10 text-left">
                     <time class="font-mono italic">January 2024</time>
                     <div class="text-lg font-black">Internship @ Pomerleau</div>
-                    I worked as a Software Developer intern at Pomerleau.
+                    I worked as a Software Developer intern at Pomerleau for 8 months.
                 </div>
                 <hr />
             </li>
@@ -39,7 +39,7 @@ import TickIconComponent from './reusable/tick-icon';
                 <div class="timeline-start mb-10 md:text-end text-left">
                     <time class="font-mono italic">June 2023</time>
                     <div class="text-lg font-black">Internship @ AskLora</div>
-                    I worked as a Product Manager intern at Asklora.
+                    I worked as a Product Manager intern at Asklora for 6 months.
                 </div>
                 <hr />
             </li>
@@ -51,7 +51,7 @@ import TickIconComponent from './reusable/tick-icon';
                 <div class="timeline-end md:mb-10 text-left">
                     <time class="font-mono italic">September 2022</time>
                     <div class="text-lg font-black">Project Manager @ TMU</div>
-                    I worked as a Project Manager for Introduction to Engineering (CEN100) course at Toronto Metropolitan University.
+                    I worked as a Project Manager for Introduction to Engineering (CEN100) course at Toronto Metropolitan University for 4 months.
                 </div>
             </li>
         </ul>

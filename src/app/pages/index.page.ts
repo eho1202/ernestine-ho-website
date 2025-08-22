@@ -12,7 +12,6 @@ import FooterComponent from '../components/footer';
   imports: [NavbarComponent, AboutComponent, TechStackComponent, ProjectComponents, ContactComponent, FooterComponent],
   template: `
       <app-navbar/>
-      <!-- <app-hero-section/> -->
       <app-about/>
       <app-tech-stack/>
       <app-projects/>

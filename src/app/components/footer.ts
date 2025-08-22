@@ -10,7 +10,7 @@ import { AppModule } from '../app.module';
             <aside class="items-center"> 
                 <p>Copyright © 2025 - Ernestine Ho. All Rights Reserved.</p> 
             </aside> 
-            <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"> 
+            <nav class="grid-flow-col gap-4 sm:place-self-center sm:justify-self-end"> 
                 <a class="w-6 h-6 fill-current" href="https://github.com/eho1202" target="_blank"> 
                     <svg  
                         role="img"  
