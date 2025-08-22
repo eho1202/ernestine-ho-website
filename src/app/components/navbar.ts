@@ -1,5 +1,4 @@
-import { Component, OnInit, HostListener, OnDestroy } from '@angular/core';
-import { fromEvent, Subscription } from 'rxjs';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({

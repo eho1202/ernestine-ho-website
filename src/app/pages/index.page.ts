@@ -11,12 +11,16 @@ import FooterComponent from '../components/footer';
   selector: 'app-home',
   imports: [NavbarComponent, AboutComponent, TechStackComponent, ProjectComponents, ContactComponent, FooterComponent],
   template: `
-      <app-navbar/>
-      <app-about/>
-      <app-tech-stack/>
-      <app-projects/>
-      <app-contact/>
-      <app-footer/>
+      <div class="main-wrapper overflow-x-hidden">
+        <app-navbar/>
+        <main>
+          <app-about/>
+          <app-tech-stack/>
+          <app-projects/>
+          <app-contact/>
+          <app-footer/>
+        </main>
+      </div>
   `,
 })
 export default class HomeComponent {
