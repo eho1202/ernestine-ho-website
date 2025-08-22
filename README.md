@@ -1,5 +1,7 @@
 # personal-website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a538610c-085d-4918-82ca-7d5a00450c30/deploy-status)](https://app.netlify.com/projects/ernestineho/deploys)
+
 This project was generated with [Analog](https://analogjs.org), the fullstack meta-framework for Angular.
 
 ## Setup
