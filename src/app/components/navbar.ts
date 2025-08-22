@@ -8,12 +8,9 @@ import { CommonModule } from '@angular/common';
     selector: 'app-navbar',
     imports: [AppModule, LucideAngularModule, CommonModule],
     template: `
-    <nav class="navbar bg-base-100 shadow-sm px-6 justify-between z-[999] fixed"
-        [class.hidden]="!isSticky">
-        <div class="flex items-center gap-2">
-            <a href="#" class="btn btn-ghost text-xl flex items-center gap-2" (click)="scrollToSection('home', $event)">
-                <lucide-icon name="house" class="w-6 h-6"/>
-            </a>
+    <nav class="navbar bg-base-100 shadow-sm px-6 justify-between z-[999] fixed">
+        <div class="flex items-center gap-2 font-medium">
+            Ernestine Ho
         </div>
         <div role="tablist" class="tabs tabs-border flex items-center">
             <ul class="menu menu-horizontal px-1">
@@ -28,7 +25,7 @@ import { CommonModule } from '@angular/common';
 })
 
 export default class NavbarComponent implements OnInit, OnDestroy {
-    activeTab = 'home';
+    activeTab = 'about';
     isSticky = false;
     private scrollSubscription?: Subscription;
 
@@ -62,7 +59,7 @@ export default class NavbarComponent implements OnInit, OnDestroy {
 
     private updateActiveTabOnScroll() {
         const sections = ['about', 'tech', 'projects', 'contact'];
-        const navbarHeight = 80;
+        const navbarHeight = 64;
         
         for (let i = sections.length - 1; i >= 0; i--) {
         const element = document.getElementById(sections[i]);

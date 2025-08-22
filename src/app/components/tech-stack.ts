@@ -8,13 +8,13 @@ import TitleComponent from './reusable/title';
     selector: 'app-tech-stack',
     imports: [TechCardComponent, ExperienceComponent, TitleComponent],
     template: `
-    <section class="min-h-screen flex items-center justify-center bg-base-200 p-20" id="tech">
+    <section id="tech" class="min-h-screen flex items-center justify-center bg-base-200 p-20">
         <div class="container mx-auto">
-            <app-title name="My Skills and Experience"/>
+            <app-title name="My Skills and Experience."/>
             <div class="mb-6">
                 <h2 class="text-2xl text-left font-semibold mb-4">Programming Languages</h2>
             </div>
-            <div class="pl-6 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8 mb-16">
+            <div class="pl-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-8 mb-16">
                 <app-tech-card icon="typescript_logo" name="TypeScript"></app-tech-card>
                 <app-tech-card icon="javascript_logo" name="JavaScript"></app-tech-card>
                 <app-tech-card icon="python_logo" name="Python"></app-tech-card>
@@ -27,7 +27,7 @@ import TitleComponent from './reusable/title';
             <div class="mb-6">
                 <h2 class="text-2xl text-left font-semibold mb-4">Tools and Technologies</h2>
             </div>
-            <div class="pl-6 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8 mb-20">
+            <div class="pl-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-8 mb-20">
                 <app-tech-card icon="react_logo" name="React"></app-tech-card>
                 <app-tech-card icon="angular_logo" name="Angular"></app-tech-card>
                 <app-tech-card icon="tailwind_logo" name="Tailwind"></app-tech-card>

@@ -7,12 +7,12 @@ import ProjectCardComponent from './reusable/project-card';
     selector: 'app-projects',
     imports: [TitleComponent, ProjectCardComponent],
     template: `
-        <section class="min-h-screen flex items-center justify-start bg-base p-20" id="projects">
+        <section id="projects" class="min-h-screen flex items-center justify-start bg-base p-20">
             <div class="container mx-auto">
-                <app-title name="My Projects"/>
+                <app-title name="My Projects."/>
                 <p class="text-xl text-left">Here are some projects I worked on during my studies and personal time.</p>
                 <div class="flex justify-center mt-12">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+                    <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 justify-items-center">
                         <app-project-card
                             image="tourism"
                             title="Recommendation System for Tourists"
@@ -50,7 +50,7 @@ import ProjectCardComponent from './reusable/project-card';
                             title="Satellite Monitoring System"
                             description="The project consists of a satellite network monitoring system and dashboard. It keeps track of the number of clients within a given 
                                         service area, peak usage times of the system, and key logs of satellites in orbit."
-                            [technologies]="['Python', 'TypeScript', 'React', 'FastAPI', 'RabbitMQ', 'MongoDB', 'Docker']"
+                            [technologies]="['TypeScript', 'Python', 'React', 'FastAPI', 'RabbitMQ', 'MongoDB', 'Docker']"
                             [links]="['https://github.com/JeromeMagpantay/SatelliteMonitoringSystem']"
                         />
                         <app-project-card

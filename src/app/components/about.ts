@@ -9,12 +9,15 @@ import TitleComponent from './reusable/title';
   selector: 'app-about',
   imports: [LucideAngularModule, AppModule, CardComponent, TitleComponent],
   template: `
-    <section class="min-h-screen flex items-center justify-center bg-base" id="about">
-      <div class="container mx-auto flex flex-col lg:flex-row items-start">
+    <section id="about" class="min-h-screen flex items-center justify-center bg-base pt-20">
+      <div class="container mx-auto flex flex-col lg:flex-row items-center lg:items-start">
+        <div class="flex-1 flex order-0 lg:order-1 lg:items-start lg:mt-20 xl:justify-end">
+          <img src="/assets/images/profile-pic.png" class="max-w-sm rounded-lg shadow-2xl mb-4" alt="Profile Picture" />
+        </div>
         <div class="flex-1 text-left">
-          <app-title name="A Little Bit About Me"/>
+          <app-title name="Hey I'm Ernestine Ho!"/>
           <div class="space-y-6">
-            <div class="flex flex-row gap-4 mb-6">
+            <div class="flex flex-col gap-4 mb-6 order-1 items-center justify-center md:flex-row md:items-start lg:order-1">
               <app-card icon="award" title="Experience" description="1+ Year in Software Development"></app-card>
               <app-card icon="graduation-cap" title="Education" description="B.Eng. Computer Engineering @ TMU"></app-card>
             </div>
@@ -28,12 +31,10 @@ import TitleComponent from './reusable/title';
             <p>
               I am passionate about software development, data science, and advancing AI technologies to make our day to day life a little less mundane!
             </p>
-
-            <button class="btn btn-secondary mt-4" onclick="window.open('/assets/pdfs/Ernestine_Ho_Resume.pdf', '_blank')">Check Out My Resume :)</button>
+            <div class="flex items-center justify-center lg:items-start lg:justify-start">
+              <button class="btn btn-secondary mt-4 mb-6" onclick="window.open('/assets/pdfs/Ernestine_Ho_Resume.pdf', '_blank')">Check Out My Resume :)</button>
+            </div>
           </div>
-        </div>
-        <div class="flex-1 flex justify-center lg:items-start lg:mt-20 lg:justify-end">
-          <img src="/assets/images/profile-pic.png" class="max-w-sm rounded-lg shadow-2xl" alt="Profile Picture" />
         </div>
       </div>
     </section>

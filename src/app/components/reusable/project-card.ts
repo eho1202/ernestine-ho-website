@@ -5,9 +5,9 @@ import { CommonModule } from '@angular/common';
     selector: 'app-project-card',
     imports: [CommonModule],
     template: `
-        <div class="card card-border w-96 h-140 bg-base-100 shadow-sm border">
+        <div class="card card-border w-96 h-130 bg-base-100 shadow-sm border">
             <figure>
-                <img src="/assets/images/{{image}}.png" alt={{image}} class="h-60 w-auto mt-2"/>
+                <img src="/assets/images/{{image}}.png" alt={{image}} class="h-50 w-auto mt-2"/>
             </figure>
             <div class="card-body">
                 <h2 class="card-title">{{title}}</h2>

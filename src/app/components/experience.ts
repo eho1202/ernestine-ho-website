@@ -12,7 +12,7 @@ import TickIconComponent from './reusable/tick-icon';
                 <div class="timeline-middle">
                     <app-tick-icon/>
                 </div>
-                <div class="timeline-start mb-10 md:text-end">
+                <div class="timeline-start mb-10 md:text-end text-left">
                     <time class="font-mono italic">Current</time>
                     <div class="text-lg font-black">Software Developer @ Pomerleau</div>
                     Currently working as a Software Developer at Pomerleau.
@@ -36,7 +36,7 @@ import TickIconComponent from './reusable/tick-icon';
                 <div class="timeline-middle">
                     <app-tick-icon/>
                 </div>
-                <div class="timeline-start mb-10 md:text-end">
+                <div class="timeline-start mb-10 md:text-end text-left">
                     <time class="font-mono italic">June 2023</time>
                     <div class="text-lg font-black">Internship @ AskLora</div>
                     I worked as a Product Manager intern at Asklora.
