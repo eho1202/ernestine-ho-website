@@ -6,7 +6,7 @@ import { AppModule } from '../app.module';
     selector: 'app-footer',
     imports: [AppModule, LucideAngularModule],
     template: `
-        <footer class="footer sm:footer-horizontal bg-base-300 text-base-content items-center p-4 overflow-x: hidden;"> 
+        <footer class="footer sm:footer-horizontal bg-base-300 text-base-content items-center p-4"> 
             <aside class="items-center"> 
                 <p>Copyright © 2025 - Ernestine Ho. All Rights Reserved.</p> 
             </aside> 

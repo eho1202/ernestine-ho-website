@@ -6,11 +6,11 @@ import { CommonModule } from '@angular/common';
     selector: 'app-navbar',
     imports: [CommonModule],
     template: `
-    <nav class="navbar bg-base-100 shadow-sm px-6 justify-between z-[999] fixed overflow-x: hidden;">
+    <nav class="navbar bg-base-100 shadow-sm px-6 justify-between z-[999] fixed">
         <div class="flex items-center font-medium">
             Ernestine Ho
         </div>
-        <div role="tablist" class="tabs tabs-border tabs-sm flex items-end">
+        <div role="tablist" class="tabs tabs-border tabs-sm grid grid-cols-2 sm:flex sm:items-end">
             <a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'about'" (click)="scrollToSection('about', $event)">About Me</a>
             <a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'tech'" (click)="scrollToSection('tech', $event)">Experiences</a>
             <a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'projects'" (click)="scrollToSection('projects', $event)">Projects</a>

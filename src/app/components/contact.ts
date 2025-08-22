@@ -6,7 +6,7 @@ import { AppModule } from '../app.module';
     selector: 'app-contact',
     imports: [AppModule, LucideAngularModule],
     template: `
-        <section id="contact" class="min-h-screen flex items-center justify-center bg-base-200 overflow-x: hidden;">
+        <section id="contact" class="min-h-screen flex items-center justify-center bg-base-200">
             <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center">
                 <div class="space-y-2 text-center">
                     <h2 class="text-2xl">Let's Get in Touch!</h2>
