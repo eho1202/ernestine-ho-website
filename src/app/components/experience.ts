@@ -7,7 +7,7 @@ import TickIconComponent from './reusable/tick-icon';
     imports: [TickIconComponent],
     template:`
     <div class="mt-2">
-        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical overflow-x: hidden;">
             <li>
                 <div class="timeline-middle">
                     <app-tick-icon/>

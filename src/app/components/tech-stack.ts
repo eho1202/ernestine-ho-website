@@ -8,7 +8,7 @@ import TitleComponent from './reusable/title';
     selector: 'app-tech-stack',
     imports: [TechCardComponent, ExperienceComponent, TitleComponent],
     template: `
-    <section id="tech" class="min-h-screen flex items-center justify-center bg-base-200 p-10 md:p-20">
+    <section id="tech" class="min-h-screen flex items-center justify-center bg-base-200 p-10 md:p-20 overflow-x: hidden;">
         <div class="container mx-auto">
             <app-title name="My Skills and Experience."/>
             <div class="mb-6">

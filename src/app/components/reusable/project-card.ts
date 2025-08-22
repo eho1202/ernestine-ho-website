@@ -11,9 +11,9 @@ import { CommonModule } from '@angular/common';
             </figure>
             <div class="card-body">
                 <h2 class="card-title">{{title}}</h2>
-                <div class="flex flex-wrap gap-2 mb-2">
+                <div class="flex flex-wrap gap-2">
                     @for(tech of technologies; track tech) {
-                        <span class="badge text-white" [ngStyle]="{'background-color': getBadgeColor(tech)}">
+                        <span class="badge text-white pb-0.5" [ngStyle]="{'background-color': getBadgeColor(tech)}">
                             {{tech}}
                         </span>
                     }

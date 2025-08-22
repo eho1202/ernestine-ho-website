@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, HostListener, OnDestroy } from '@angular/core';
 import { fromEvent, Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 
@@ -6,69 +6,65 @@ import { CommonModule } from '@angular/common';
     selector: 'app-navbar',
     imports: [CommonModule],
     template: `
-    <nav class="navbar bg-base-100 shadow-sm px-6 justify-between z-[999] fixed">
-        <div class="flex items-center gap-2 font-medium">
+    <nav class="navbar bg-base-100 shadow-sm px-6 justify-between z-[999] fixed overflow-x: hidden;">
+        <div class="flex items-center font-medium">
             Ernestine Ho
         </div>
-        <div role="tablist" class="tabs tabs-border flex items-end">
-            <ul class="menu menu-horizontal px-1">
-            <li><a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'about'" (click)="scrollToSection('about', $event)">About Me</a></li>
-            <li><a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'tech'" (click)="scrollToSection('tech', $event)">Experiences</a></li>
-            <li><a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'projects'" (click)="scrollToSection('projects', $event)">Projects</a></li>
-            <li><a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'contact'" (click)="scrollToSection('contact', $event)">Contact</a></li>
-            </ul>
+        <div role="tablist" class="tabs tabs-border tabs-sm flex items-end">
+            <a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'about'" (click)="scrollToSection('about', $event)">About Me</a>
+            <a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'tech'" (click)="scrollToSection('tech', $event)">Experiences</a>
+            <a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'projects'" (click)="scrollToSection('projects', $event)">Projects</a>
+            <a role="tab" class="tab hover:text-primary" [class.tab-active]="activeTab === 'contact'" (click)="scrollToSection('contact', $event)">Contact</a>
         </div>
     </nav>
     `
 })
 
-export default class NavbarComponent implements OnInit, OnDestroy {
-    activeTab = 'about';
-    private scrollSubscription?: Subscription;
+export default class NavbarComponent implements OnInit {
+    activeTab: string = 'about';
 
     ngOnInit() {
-        this.scrollSubscription = fromEvent(window, 'scroll').subscribe(() => {
-            this.updateActiveTabOnScroll();
-        });
+        this.updateActiveTab();
     }
 
     scrollToSection(sectionId: string, event: Event) {
         event.preventDefault();
-
+        
         this.activeTab = sectionId;
-
         const element = document.getElementById(sectionId);
-        if (element) {
-            const navbar = document.querySelector('nav.navbar');
-            const navbarHeight = navbar?.clientHeight || 64;
-            const elementPosition = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
+        const navbar = document.querySelector('nav.navbar');
+        if (element && navbar) {
+            const navbarHeight = navbar.clientHeight;
+            const offsetTop = element.offsetTop - navbarHeight;
 
             window.scrollTo({
-                top: elementPosition,
+                top: offsetTop,
                 behavior: 'smooth'
             });
         }
     }
 
-
-    private updateActiveTabOnScroll() {
-        const sections = ['about', 'tech', 'projects', 'contact'];
-        const navbarHeight = 64;
-        
-        for (let i = sections.length - 1; i >= 0; i--) {
-        const element = document.getElementById(sections[i]);
-        if (element) {
-            const rect = element.getBoundingClientRect();
-            if (rect.top <= navbarHeight + 100) {
-                this.activeTab = sections[i];
-                break;
-            }
-        }
-        }
+    @HostListener('window:scroll', ['$event'])
+    onWindowScroll() {
+        this.updateActiveTab();
     }
 
-    ngOnDestroy() {
-        this.scrollSubscription?.unsubscribe();
+    private updateActiveTab() {
+        const sections = ['about', 'tech', 'projects', 'contact'];
+        const navbar = document.querySelector('nav.navbar');
+        if (!navbar) return;
+        const navbarHeight = navbar.clientHeight;
+        
+        for (let i = sections.length - 1; i >= 0; i--) {
+            const element = document.getElementById(sections[i]);
+            if (element) {
+                    const rect = element.getBoundingClientRect();
+                if (rect.top <= navbarHeight + 100) {
+                    this.activeTab = sections[i];
+                    break;
+                }
+            }
+        }
     }
 
 }

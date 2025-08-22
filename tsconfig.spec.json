@@ -6,6 +6,7 @@
     "target": "es2016",
     "types": ["node", "vitest/globals"],
     "composite": true,
+    "declaration": true,
   },
   "files": ["src/test-setup.ts"],
   "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]

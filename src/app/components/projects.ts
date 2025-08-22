@@ -7,7 +7,7 @@ import ProjectCardComponent from './reusable/project-card';
     selector: 'app-projects',
     imports: [TitleComponent, ProjectCardComponent],
     template: `
-        <section id="projects" class="min-h-screen flex items-center justify-start bg-base p-10 md:p-20">
+        <section id="projects" class="min-h-screen flex items-center justify-start bg-base p-10 md:p-20 overflow-x: hidden;">
             <div class="container mx-auto">
                 <app-title name="My Projects."/>
                 <p class="text-xl text-left">Here are some projects I worked on during my studies and personal time.</p>
