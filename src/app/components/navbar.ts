@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
         <div class="flex items-center gap-2 font-medium">
             Ernestine Ho
         </div>
-        <div role="tablist" class="tabs tabs-border flex items-center ml-auto">
+        <div role="tablist" class="tabs tabs-border flex justify-end items-center ml-auto">
             <ul class="menu menu-horizontal px-1">
             <li><a role="tab" href="#about" class="tab hover:text-primary" [class.tab-active]="activeTab === 'about'" (click)="scrollToSection('about', $event)">About Me</a></li>
             <li><a role="tab" href="#tech" class="tab hover:text-primary" [class.tab-active]="activeTab === 'tech'" (click)="scrollToSection('tech', $event)">Experiences</a></li>
