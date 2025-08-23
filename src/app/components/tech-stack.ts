@@ -35,11 +35,13 @@ import TitleComponent from './reusable/title';
                 <app-tech-card icon="nodejs_logo" name="Node.js"></app-tech-card>
                 <app-tech-card icon="mongodb_logo" name="MongoDB"></app-tech-card>
                 <app-tech-card icon="postgresql_logo" name="PostgreSQL"></app-tech-card>
+                <app-tech-card icon="kubernetes_logo" name="Kubernetes"></app-tech-card>
                 <app-tech-card icon="mysql_logo-cropped" name="MySQL"></app-tech-card>
                 <app-tech-card icon="aws_cloud_logo_light" name="AWS"></app-tech-card>
                 <app-tech-card icon="docker_logo" name="Docker"></app-tech-card>
                 <app-tech-card icon="git_logo" name="Git"></app-tech-card>
                 <app-tech-card icon="jira_logo" name="Jira"></app-tech-card>
+                <app-tech-card icon="github_copilot_logo" name="GitHub CoPilot"></app-tech-card>
             </div>
             <h2 class="text-2xl text-center md:text-left font-semibold mb-6">My Work Experience</h2>
             <app-experience/>

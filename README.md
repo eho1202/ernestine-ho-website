@@ -28,7 +28,7 @@ Run `npm run test` to run unit tests with [Vitest](https://vitest.dev).
 - Become a [Sponsor](https://github.com/sponsors/brandonroberts)
 
 ## Resources Used
-[DaisyUI](https://daisyui.com/)
-[Lucide](https://lucide.dev/)
-[svg repo](https://www.svgrepo.com/)
+[DaisyUI](https://daisyui.com/)  
+[Lucide](https://lucide.dev/)  
+[svg repo](https://www.svgrepo.com/)  
 [uiverse](https://uiverse.io/)
