@@ -10,7 +10,7 @@ import { AppModule } from '../../app.module';
             <div class="card-body flex items-center text-center">
                 <lucide-icon [name]="icon" class="w-6 h-6"/>
                 <h2 class="text-2xl font-bold">{{ title }}</h2>
-                <p class="text-sm">{{ description }}</p>
+                <p class="text-sm whitespace-pre-line">{{ description }}</p>
             </div>
         </div>
     `,

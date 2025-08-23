@@ -11,15 +11,15 @@ import TitleComponent from './reusable/title';
   template: `
     <section id="about" class="min-h-screen flex items-center justify-center bg-base pt-28 sm:pt-20 p-10 md:p-20">
       <div class="container mx-auto flex flex-col lg:flex-row items-center lg:items-start">
-        <div class="flex-1 flex order-0 lg:order-1 lg:items-start lg:mt-20 xl:justify-end">
+        <div class="flex-1 flex order-0 lg:order-1 lg:items-start lg:mt-20 xl:justify-end md:pl-4">
           <img src="/assets/images/profile-pic.png" class="max-w-sm rounded-lg shadow-lg mb-4" alt="Profile Picture" />
         </div>
         <div class="flex-1 text-center items-center justify-center sm:text-left">
           <app-title name="Hey I'm Ernestine Ho!"/>
           <div class="space-y-6">
             <div class="flex flex-col gap-4 mb-6 order-1 items-center justify-center md:flex-row md:items-start lg:order-1">
-              <app-card icon="award" title="Experience" description="2+ Years in Software Development"></app-card>
-              <app-card icon="graduation-cap" title="Education" description="B.Eng. Computer Engineering @ TMU"></app-card>
+              <app-card class="md:mt-2" icon="award" title="Experience" description="2+ Years in Software Development"></app-card>
+              <app-card icon="graduation-cap" title="Education" description="B.Eng. Computer Engineering @ TMU\nMinor in Computer Science"></app-card>
             </div>
             <p>
               I am a <b>recent Computer Engineering graduate</b> from Toronto Metropolitan University (formerly Ryerson University) with a 
