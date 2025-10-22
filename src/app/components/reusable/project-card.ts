@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
     template: `
         <div class="card card-border w-78 h-120 bg-base-100 shadow-sm border">
             <figure>
-                <img src="/assets/images/{{image}}.png" alt={{image}} class="h-36 w-auto mt-2"/>
+                <img src="/assets/images/{{image}}.png" alt={{image}} class="h-30 w-auto mt-2"/>
             </figure>
             <div class="card-body">
                 <h2 class="card-title">{{title}}</h2>
