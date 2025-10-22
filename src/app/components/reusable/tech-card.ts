@@ -3,9 +3,9 @@ import { Component, Input } from '@angular/core';
 @Component({
     selector: 'app-tech-card',
     template: `
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:py-1.5 py-1 bg-base-100 shadow-md">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 px-3 py-2 sm:px-4 py-1.5 py-1 bg-base-100 shadow-md">
             <img src="/assets/images/logos/{{icon}}.svg" alt="{{name}}" class="h-8 w-auto md:h-6 pt-1 sm:pt-0" />
-            <span class="font-medium">{{ name }}</span>
+            <span class="font-medium whitespace-nowrap">{{ name }}</span>
         </div>
     `,
 })
