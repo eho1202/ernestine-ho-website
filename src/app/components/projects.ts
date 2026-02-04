@@ -13,6 +13,14 @@ import ProjectCardComponent from './reusable/project-card';
                 <p class="text-xl text-left">Here are some projects I worked on during my studies and personal time.</p>
                 <div class="flex justify-center mt-12">
                     <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 justify-items-center">
+                        <app-project-card 
+                            image="bank"
+                            title="Horizon Chase - Personal Finance Banking Application"
+                            description="Horizon Chase is a modern personal finance platform built with Next.js 15, TypeScript, MongoDB, and Better Auth. 
+                            Features secure authentication, responsive UI with shadcn/ui, and production monitoring with Sentry."
+                            [technologies]="['TypeScript', 'Next.js', 'MongoDB', 'Sentry']"
+                            [links]="['https://github.com/eho1202/personal-finance-app']"
+                        />
                         <app-project-card
                             image="tourism"
                             title="Recommendation System for Tourists"

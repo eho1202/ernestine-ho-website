@@ -60,6 +60,8 @@ export default class ProjectCardComponent {
             AWS: '#FF9900',
             "HTML/CSS": '#E34F26',
             NiceGUI: '#027be3',
+            "Next.js": '#000000',
+            Sentry: '#362D59',
         };
         return colors[tech] || 'badge-soft';
     }
