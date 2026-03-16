@@ -14,7 +14,7 @@ import ProjectCardComponent from './reusable/project-card';
                 <div class="flex justify-center mt-12">
                     <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 justify-items-center">
                         <app-project-card 
-                            image="bank"
+                            image="budget"
                             title="Personal Budget Tracker"
                             description="I created this project to learn how to build a data pipeline by extracting data from credit card statement PDFs,
                             then transforming and loading the data into Supabase. The data is then displayed onto the dashboard."
