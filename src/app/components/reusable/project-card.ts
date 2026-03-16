@@ -56,6 +56,7 @@ export default class ProjectCardComponent {
             RabbitMQ: '#F1A800',
             Firebase: '#FFCA28',
             MySQL: '#4479A1',
+            Supabase: '#42D388',
             PostgreSQL: '#336791',
             AWS: '#FF9900',
             "HTML/CSS": '#E34F26',

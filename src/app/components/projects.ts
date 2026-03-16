@@ -15,6 +15,14 @@ import ProjectCardComponent from './reusable/project-card';
                     <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 justify-items-center">
                         <app-project-card 
                             image="bank"
+                            title="Personal Budget Tracker"
+                            description="I created this project to learn how to build a data pipeline by extracting data from credit card statement PDFs,
+                            then transforming and loading the data into Supabase. The data is then displayed onto the dashboard."
+                            [technologies]="['TypeScript', 'Python', 'Next.js', 'FastAPI', 'Supabase']"
+                            [links]="['https://github.com/eho1202/personal-finance-frontend']"
+                        />
+                        <app-project-card 
+                            image="bank"
                             title="Horizon Chase - Personal Finance Banking Application"
                             description="Horizon Chase is a modern personal finance platform built with Next.js 15, TypeScript, MongoDB, and Better Auth. 
                             Features secure authentication, responsive UI with shadcn/ui, and production monitoring with Sentry."
@@ -36,13 +44,13 @@ import ProjectCardComponent from './reusable/project-card';
                             [technologies]="['TypeScript', 'Angular', 'Tailwind']"
                             [links]="['https://github.com/eho1202/ernestine-ho-website']"
                         />
-                        <app-project-card
+                        <!-- <app-project-card
                             image="health"
                             title="Biometrics Health Tracker"
                             description="Currently in development, this app helps users track and monitor important digestive health metrics over time."
                             [technologies]="['Flutter']"
                             [links]="['https://github.com/eho1202/Poop-Tracker']"
-                        />
+                        /> -->
                         <app-project-card
                             image="bank"
                             title="Secure Banking Application"
